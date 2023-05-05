@@ -1,0 +1,11 @@
+{{define "blogs"}}
+{{template "header"}}
+{{template "nav"}}
+<ul>
+	{{range .Posts}}
+	<li>
+		<a href="/blog/{{.}}">{{.}}</a>
+	</li>
+	{{end}}
+</ul>
+{{end}}
